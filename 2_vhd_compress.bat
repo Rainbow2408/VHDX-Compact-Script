@@ -167,7 +167,7 @@ for /f "usebackq delims=" %%a in ("%volume_list%") do (
             if "!valid!"=="true" (
                 echo !fs! | findstr /i "NTFS FAT" >nul
                 if !errorlevel! equ 0 (
-                    echo 使用 sdelete64 清理磁碟區 !ltr!: ^(!fs!^)^.^.^.
+                    echo 步驟 %step%/%total_step%: 使用 sdelete64 清理磁碟區 !ltr!: ^(!fs!^)^.^.^.
                     sdelete64 -z !ltr!:
                 )
             )
