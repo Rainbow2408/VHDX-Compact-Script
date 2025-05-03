@@ -191,12 +191,13 @@ echo.
 echo 步驟 %step%/%total_step%: 壓縮虛擬磁碟...
 set /a step+=1
 diskpart /s "%diskpart_compact%"
+echo.
 
 echo 步驟 %step%/%total_step%: 解除掛載虛擬磁碟...
 set /a step+=1
 diskpart /s "%diskpart_detach%"
-
 echo.
+
 echo 操作完成: 虛擬磁碟壓縮已完成！
 
 :cleanup
