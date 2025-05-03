@@ -28,3 +28,6 @@
 可以有空白路徑，像是 "D:\a b\c.vhdx"，記得使用雙引號包住，一般直接把檔案拉進來就自動貼上路徑了。
 
 註： 會自動申請 UAC 管理員權限，以便進行 Diskpart 操作
+
+## 引用
+ - Batch UAC 提權: <https://sites.google.com/site/eneerge/scripts/batchgotadmin>
