@@ -134,7 +134,6 @@ if not defined disk_num (
         goto cleanup
     )
 )
-PAUSE
 
 set /a step+=1
 :: 獲取磁碟上的磁碟區資訊
@@ -169,7 +168,7 @@ for /f "usebackq delims=" %%a in ("%volume_list%") do (
                 echo !fs! | findstr /i "NTFS FAT" >nul
                 if !errorlevel! equ 0 (
                     echo 使用 sdelete64 清理磁碟區 !ltr!: ^(!fs!^)^.^.^.
-                    sdelete64 -z !ltr!
+                    sdelete64 -z !ltr!:
                 )
             )
         )
