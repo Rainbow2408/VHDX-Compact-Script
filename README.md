@@ -1,8 +1,8 @@
 ## 如何安裝
 
-直接下載就可以了 Code -> Download Zip
+直接下載就可以了 Code -> Download Zip 或是 Git Clone 方法
 
-或是 Git Clone 方法
+下載的檔案是 UTF-8 編碼，請透過 VS Code 轉換為 Big5 編碼
 
 記得 1_vhd_prompt.bat 和 2_vhd_compress.bat 要放在同一目錄，雙擊打開 1_vhd_prompt.bat 即可食用。
 
